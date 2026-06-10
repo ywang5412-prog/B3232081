@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>樂透開獎號碼</title>
+</head>
+<body>
+    <h1>樂透開獎號碼</h1>
+
+    <h2>{{ period }}</h2>
+    <p>{{ date }}</p>
+
+    <h3>一般號碼</h3>
+    <p>
+        {% for number in numbers %}
+            <span>{{ number }}</span>
+        {% endfor %}
+    </p>
+
+    <h3>特別號</h3>
+    <p>{{ special_ball }}</p>
+</body>
+</html>
